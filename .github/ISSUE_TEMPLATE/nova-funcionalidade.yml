@@ -1,0 +1,18 @@
+name: 🛠 Nova Funcionalidade
+description: Registrar uma Nova Funcionalidade
+title: "[FEAT] <Título>"
+labels: [FEAT]
+body:
+- type: checkboxes
+  attributes:
+    label: Não existe outra ISSUE aberta para esta nova funcionalidade?
+    description: Por favor, antes de registrar uma nova solicitação procure nas Issues existentes pelo nova funcionalidade que você está registrando.
+    options:
+    - label: Eu fiz uma busca e não encontrei um Issue para a nova funcionalidade.
+      required: true
+- type: textarea
+  attributes:
+    label: Relato do funcionamento da nova funcionalidade
+    description: Uma descrição concisa da nova funcionalidade.
+  validations:
+    required: false
