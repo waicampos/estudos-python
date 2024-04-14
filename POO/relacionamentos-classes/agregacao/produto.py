@@ -4,7 +4,7 @@ class Produto:
         self.__valor = valor
 
     def __del__(self):
-        print("Deletando Produto: {nome} -> {valor}")
+        print(f"Deletando Produto: {self.__nome} -> {self.__valor}")
 
     @property
     def nome(self):

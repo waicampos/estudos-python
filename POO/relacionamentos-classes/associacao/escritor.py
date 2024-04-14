@@ -1,5 +1,8 @@
+from typing import Text
+
+
 class Escritor:
-    def __init__(self, nome) -> None:
+    def __init__(self, nome: Text) -> None:
         self.__nome = nome
         self.__ferramenta = None
         print("<<Criando Escritor>>")

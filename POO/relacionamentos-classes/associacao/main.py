@@ -8,7 +8,8 @@ from escritor import Escritor
 from caneta import Caneta
 from maquina_escrever import MaquinaEscrever
 
-escritor = Escritor("Joãozinho")
+
+escritor =  Escritor('Joãozinho')
 caneta = Caneta("Bic")
 maquina = MaquinaEscrever()
 
@@ -18,6 +19,8 @@ maquina = MaquinaEscrever()
 escritor.ferramenta = caneta
 escritor.ferramenta.escrever()
 
+escritor.ferramenta = maquina
+escritor.ferramenta.escrever()
 # só vai ser deleta quando não estiver mais associada a outra classe
 # del caneta
 
@@ -25,5 +28,6 @@ print("------------")
 del escritor
 print("------------")
 caneta.escrever()
+maquina.escrever()
 
 print("END------------------------")

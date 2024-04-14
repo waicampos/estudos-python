@@ -4,7 +4,7 @@
 # Link:
 # https://www.youtube.com/watch?v=ewGulRBQxOE&list=PLbIBj8vQhvm34qAAEEH_PdL2tMG9rz-P7&index=8
 
-# Agregação é um tipo de associação, porém uma classe depende da outra para
+# Agregação é um tipo de relação, porém uma classe depende da outra para
 # funcionar corretamente.
 # O Carrinho de compras pode existir sem produtos, porém ele precisa deles
 # para funcionar corretamente.
@@ -27,6 +27,7 @@ carrinho.lista_produtos()
 print(carrinho.soma_total())
 
 del carrinho
+
 
 print()
 carrinho2.inserir_produto(p1, p2, p3, p1)
