@@ -30,7 +30,9 @@ query2 = """
     SELECT DISTINCT "SigAgente"
     FROM "fcf2906c-7c32-4b9b-a637-054e7a5234f4"
 """
-r = requests.get(f'https://dadosabertos.aneel.gov.br/api/3/action/datastore_search_sql?sql={query}')
+r = requests.get(f'https://dadosabertos.aneel.gov.br/api/3/action/datastore_search_sql?sql={query2}')
+ans = r.json()['result']['records']
+lista_distribuidoras = [x['SigAgente'] for x in ans]
 print("Exemplo2: Consultando nome das distribuidoras-----------")
-print(r)
+print(lista_distribuidoras)
 print("Exemplo2: Consultando nome das distribuidoras-----------")
